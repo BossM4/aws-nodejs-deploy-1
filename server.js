@@ -10,6 +10,9 @@ app.get('/api/login', (req,res)=> {
     res.send({message:"This is Login pages"})
 })
 
+app.get('/api/register', (req,res)=> {
+    res.send({message:"This is Registrer pages"})
+})
 
 app.listen(port, ()=> {
     console.log("Server running on port",port)
