@@ -6,15 +6,10 @@ app.get('/api/get', (req,res)=> {
     res.send({message:"Hello Backend Node JS"})
 })
 
-app.get('/api/get_user_details',(req,res)=> {
-    res.send({
-        user:{
-            name:'Nattapong',
-            Position:'BOSS',
-            contact:'0987654321'
-        }
-    })
+app.get('/api/get_user_datils', (req,res)=> {
+    res.send({message:"This is user Deatils"})
 })
+
 
 app.listen(port, ()=> {
     console.log("Server running on port",port)
