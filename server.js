@@ -6,6 +6,7 @@ app.get('/api/get', (req,res)=> {
     res.send({message:"Hello Backend Node JS"})
 })
 
+// api login page
 app.get('/api/login', (req,res)=> {
     res.send({message:"This is Login pages"})
 })
