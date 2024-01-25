@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const PORT =8000
 
 app.get('/api/get', (req,res)=> {
     res.send({message:"Hello Backend Node JS"})
@@ -21,6 +20,7 @@ app.get('/api/time', (req,res)=> {
     res.send({message:"This is TIME Clock pages"})
 })
 
+//user details
 app.get('/api/get_user_details',(req,res)=> {
     res.send({
         user:{
@@ -32,7 +32,6 @@ app.get('/api/get_user_details',(req,res)=> {
         location:{galaxy:'Andromada'}
     })
 })
-    
-app.listen(PORT, ()=> {
-    console.log("Server running on port ",PORT)
-})
+
+const port = 8000
+app.listen(port,() => console.log(`Server started on ${port}`))
