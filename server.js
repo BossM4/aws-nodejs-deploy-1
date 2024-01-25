@@ -15,6 +15,11 @@ app.get('/api/register', (req,res)=> {
     res.send({message:"This is Registrer pages"})
 })
 
+// photo
+app.get('/api/time', (req,res)=> {
+    res.send({message:"This is Registrer pages"})
+})
+
 app.listen(port, ()=> {
     console.log("Server running on port",port)
 })
