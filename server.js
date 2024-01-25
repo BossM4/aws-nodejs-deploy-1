@@ -27,8 +27,9 @@ app.get('/api/get_user_details',(req,res)=> {
             name:'Nattapong',
             Position:'BOSS',
             contact:'0987654321',
-            age:1000
-        }
+            age:1000,
+        },
+        location:{galaxy:'Andromada'}
     })
 })
     
