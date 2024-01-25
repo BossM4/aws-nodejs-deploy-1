@@ -11,6 +11,7 @@ app.get('/api/login', (req,res)=> {
     res.send({message:"This is Login pages"})
 })
 
+// api Register page
 app.get('/api/register', (req,res)=> {
     res.send({message:"This is Registrer pages"})
 })
@@ -20,6 +21,17 @@ app.get('/api/time', (req,res)=> {
     res.send({message:"This is TIME Clock pages"})
 })
 
-app.listen(port, ()=> {
-    console.log("Server running on port",port)
+app.get('/api/get_user_details',(req,res)=> {
+    res.send({
+        user:{
+            name:'Nattapong',
+            Position:'BOSS',
+            contact:'0987654321',
+            age:1000
+        }
+    })
+})
+    
+app.listen(PORT, ()=> {
+    console.log("Server running on port ",PORT)
 })
