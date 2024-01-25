@@ -15,9 +15,9 @@ app.get('/api/register', (req,res)=> {
     res.send({message:"This is Registrer pages"})
 })
 
-// photo
+// time clock
 app.get('/api/time', (req,res)=> {
-    res.send({message:"This is Registrer pages"})
+    res.send({message:"This is TIME Clock pages"})
 })
 
 app.listen(port, ()=> {
